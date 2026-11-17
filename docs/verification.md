@@ -9,6 +9,6 @@
 - All local images loaded. The source contact page has one missing legacy logo URL; its 404/reference is preserved.
 - Existing service example destinations were checked earlier and returned HTTP 200.
 - No contact inquiry was sent. The form opens an email draft rather than posting to the existing WordPress backend.
-- The live WordPress site, GitHub repository, and domains were not changed.
+- The live WordPress site and domains were not changed. The recreation is submitted on a dedicated GitHub review branch.
 
 The screenshots in this folder show the recreated site. The original site is https://venezialandsurvey.com/.
