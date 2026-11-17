@@ -1,0 +1,12 @@
+import p0 from '@/source/replica/about.json';
+import p1 from '@/source/replica/contact.json';
+import p2 from '@/source/replica/home.json';
+import p3 from '@/source/replica/projects_boundary.json';
+import p4 from '@/source/replica/projects_dock-permitting.json';
+import p5 from '@/source/replica/projects_facility-lines.json';
+import p6 from '@/source/replica/projects_lot-survey.json';
+import p7 from '@/source/replica/projects_site-survey.json';
+import p8 from '@/source/replica/projects_subdivision.json';
+import p9 from '@/source/replica/projects_topographic.json';
+import p10 from '@/source/replica/services.json';
+export const pages:Record<string,{route:string;bodyClass:string;html:string}>={'about':p0,'contact':p1,'home':p2,'projects_boundary':p3,'projects_dock-permitting':p4,'projects_facility-lines':p5,'projects_lot-survey':p6,'projects_site-survey':p7,'projects_subdivision':p8,'projects_topographic':p9,'services':p10};

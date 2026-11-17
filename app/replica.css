@@ -1,0 +1,43 @@
+/* Source theme styles are retained to match the existing site. These rules
+   replace only behavior formerly supplied by the WordPress theme scripts. */
+.source-replica{display:contents}
+body a:focus-visible,body button:focus-visible,body input:focus-visible,body textarea:focus-visible{outline:2px solid #e50000!important;outline-offset:3px!important}
+.fusion-animated.replica-revealed{visibility:visible!important;opacity:1!important}
+.fusion-main-menu .menu-item:focus-within>.sub-menu{visibility:visible;opacity:1;display:block}
+.fusion-mobile-nav-holder .sub-menu{display:none}
+.fusion-header-sticky-height{height:120px}
+.fusion-header-wrapper{z-index:10010}
+.replica-hero{height:840px;position:relative;background-position:center;background-size:cover;background-repeat:no-repeat;background-color:#333645;overflow:hidden;font-family:'Work Sans',sans-serif}
+.replica-hero h1{position:absolute;top:312px;left:50%;transform:translateX(-50%);margin:0!important;padding:0!important;font:600 72px/72px 'Work Sans',sans-serif!important;letter-spacing:-1px!important;color:#000!important;white-space:nowrap;text-align:center}
+.replica-map-icon{position:absolute;left:calc(50% - 45px);top:191px;color:#fff;font-size:90px;line-height:22px;width:62px;height:71px}
+.replica-hero-divider{position:absolute;left:50%;top:398px;transform:translateX(-50%);display:flex;align-items:center;gap:10px;height:44px;color:#c40313}
+.replica-hero-divider span{width:65px;height:2px;background:#d30415}
+.replica-hero-divider i{font-size:40px;line-height:44px}
+.replica-hero>p{position:absolute;width:800px;left:50%;top:470px;transform:translateX(-50%);margin:0;font:400 22px/30px 'Work Sans',sans-serif;letter-spacing:0;color:#303030;text-align:center}
+.replica-hero-button{position:absolute;top:579px;left:50%;transform:translateX(-50%);padding:12px 35px;background:#c60314;color:#fff!important;border-radius:3px;font:400 15px/32px 'Work Sans',sans-serif;letter-spacing:1px;border:3px solid transparent;white-space:nowrap}
+.replica-hero-button:hover{background:#fff;color:#ffaa06!important;border-color:#000}
+.replica-form-status{margin-top:20px;font-size:14px;line-height:1.6}
+@media(min-width:480px) and (max-width:1239px){
+.replica-hero{height:calc(100vw * 840 / 1260)}
+.replica-hero h1{top:calc(100vw * 312 / 1260);font-size:calc(100vw * 72 / 1260)!important;line-height:calc(100vw * 72 / 1260)!important;letter-spacing:calc(100vw * -1 / 1260)!important}
+.replica-map-icon{top:calc(100vw * 191 / 1260);font-size:calc(100vw * 90 / 1260);left:calc(50% - 45px * 100vw / 1260px)}
+.replica-hero-divider{top:calc(100vw * 398 / 1260);height:calc(100vw * 44 / 1260);gap:calc(100vw * 10 / 1260)}
+.replica-hero-divider span{width:calc(100vw * 65 / 1260)}
+.replica-hero-divider i{font-size:calc(100vw * 40 / 1260)}
+.replica-hero>p{top:calc(100vw * 470 / 1260);width:calc(100vw * 800 / 1260);font-size:calc(100vw * 22 / 1260);line-height:calc(100vw * 30 / 1260)}
+.replica-hero-button{top:calc(100vw * 579 / 1260);padding:calc(100vw * 12 / 1260) calc(100vw * 35 / 1260);font-size:calc(100vw * 15 / 1260);line-height:calc(100vw * 32 / 1260)}
+}
+@media(max-width:479px){
+.replica-hero{height:calc(100vw * 620 / 480)}
+.replica-map-icon,.replica-hero>p{display:none}
+.replica-hero h1{top:calc(100vw * 240 / 480);width:calc(100vw * 407 / 480);font-size:calc(100vw * 44 / 480)!important;line-height:calc(100vw * 50 / 480)!important;letter-spacing:calc(100vw * 5 / 480)!important;font-weight:400!important;color:white!important;white-space:normal}
+.replica-hero-divider{top:calc(100vw * 378 / 480);height:calc(100vw * 22 / 480);gap:calc(100vw * 17 / 480);color:#ffaa06}
+.replica-hero-divider span{width:calc(100vw * 65 / 480);height:2px}
+.replica-hero-divider i{font-size:calc(100vw * 20 / 480);line-height:1}
+.replica-hero-button{top:calc(100vw * 453 / 480);padding:calc(100vw * 12 / 480) calc(100vw * 35 / 480);font:500 calc(100vw * 15 / 480)/calc(100vw * 32 / 480) 'Work Sans',sans-serif}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;transition:none!important}}
+@media(max-width:1000px){.fusion-footer-parallax{position:relative!important}}
+.replica-hero-divider i,.replica-hero-divider i:before{font-family:FontAwesome!important;font-weight:normal!important;line-height:1}
+.replica-map-icon{left:calc(50% - 44.5px)}
+.replica-hero h1,.replica-hero>p,.replica-hero-button{-webkit-font-smoothing:antialiased!important;-moz-osx-font-smoothing:grayscale}
