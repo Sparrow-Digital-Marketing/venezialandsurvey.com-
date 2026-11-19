@@ -31,7 +31,7 @@ The original WordPress, Revolution Slider, analytics, and contact-form scripts a
 
 ## Contact behavior and launch status
 
-The contact form keeps its original visual layout. Submitting it opens an email draft in the visitor's mail application and explains that the visitor must send it there. It is not connected to WordPress or a server-side email provider. No test messages were sent. A hosted form delivery service is needed if the finished site must send inquiries directly.
+The contact form matches the original visible fields and posts to `/api/contact`. Configure server-only `RESEND_API_KEY`, `CONTACT_FROM_EMAIL` (on a verified Resend domain), and `CONTACT_TO_EMAIL` in Vercel. The temporary recipient defaults to ray@sparrowdigitalmarketing.com; update it at launch. Validation and provider failures preserve the visitor's message and never report success. The hidden spam trap is excluded from the visible form. Delivery remains unavailable until valid provider settings are configured; no real test email has been sent.
 
 The original contact page references an old logo that currently returns HTTP 404; the same reference is retained rather than inventing an asset. Original copy, including legacy dates and placeholder numbers on service pages, is preserved for fidelity.
 
