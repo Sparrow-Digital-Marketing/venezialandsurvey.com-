@@ -61,3 +61,11 @@ body a:focus-visible,body button:focus-visible,body input:focus-visible,body tex
 .fusion-main-menu .replica-services-toggle{position:absolute;right:12px;top:50%;transform:translateY(-50%);width:24px;height:40px;padding:0;border:0;background:transparent;color:inherit;cursor:pointer;z-index:2}
 .fusion-main-menu .replica-services-menu[data-services-open="true"]>.sub-menu{visibility:visible;opacity:1;display:block;margin-top:0}
 .fusion-main-menu .replica-services-menu[data-services-open="false"]>.sub-menu{visibility:hidden;opacity:0;pointer-events:none}
+/* Replace the source portfolio's script-only layout and image reveal. */
+.replica-home-portfolio .fusion-portfolio-wrapper{display:flex;flex-wrap:wrap}
+.replica-home-portfolio .fusion-portfolio-wrapper::before,.replica-home-portfolio .fusion-portfolio-wrapper::after{display:none}
+.replica-home-portfolio .fusion-portfolio-wrapper>.fusion-portfolio-post{position:relative;float:none}
+.replica-home-portfolio .fusion-portfolio-post .fusion-image-wrapper,.replica-home-portfolio .fusion-portfolio-post .fusion-portfolio-content-wrapper{opacity:1}
+.replica-home-portfolio .fusion-image-wrapper:focus-within .fusion-rollover{opacity:1;transform:translateX(0)}
+.replica-home-portfolio .fusion-link-wrapper:focus-visible{outline-offset:-3px!important}
+@media(prefers-reduced-motion:reduce){.replica-home-portfolio .fusion-image-wrapper .fusion-rollover{transition:none}}
