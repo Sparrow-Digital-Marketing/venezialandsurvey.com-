@@ -41,3 +41,17 @@ body a:focus-visible,body button:focus-visible,body input:focus-visible,body tex
 .replica-hero-divider i,.replica-hero-divider i:before{font-family:FontAwesome!important;font-weight:normal!important;line-height:1}
 .replica-map-icon{left:calc(50% - 44.5px)}
 .replica-hero h1,.replica-hero>p,.replica-hero-button{-webkit-font-smoothing:antialiased!important;-moz-osx-font-smoothing:grayscale}
+/* The source carousel depended on WordPress initialization to reveal its photos. */
+.fusion-carousel.replica-services-carousel{--carousel-columns:5;position:relative}
+.fusion-carousel.replica-services-carousel .fusion-carousel-wrapper{overflow:hidden}
+.fusion-carousel.replica-services-carousel .fusion-carousel-holder{display:flex;align-items:center;width:100%;line-height:normal}
+.fusion-carousel.replica-services-carousel .fusion-carousel-item{flex:0 0 calc(100% / var(--carousel-columns));float:none;min-width:0}
+.fusion-carousel.replica-services-carousel .fusion-carousel-item .fusion-carousel-item-wrapper{display:block;visibility:visible}
+.fusion-carousel.replica-services-carousel .fusion-carousel-item .fusion-image-wrapper,.fusion-carousel.replica-services-carousel .fusion-carousel-item .fusion-image-wrapper>a{display:block}
+.fusion-carousel.replica-services-carousel .fusion-carousel-item img{display:block;aspect-ratio:450/295;object-fit:cover}
+.fusion-carousel.replica-services-carousel .fusion-carousel-nav{visibility:visible}
+.fusion-carousel.replica-services-carousel .fusion-carousel-nav button{border:0;padding:0;border-radius:0}
+@media(max-width:720px){.fusion-carousel.replica-services-carousel{--carousel-columns:4}}
+@media(max-width:540px){.fusion-carousel.replica-services-carousel{--carousel-columns:3}}
+@media(max-width:360px){.fusion-carousel.replica-services-carousel{--carousel-columns:2}}
+@media(max-width:180px){.fusion-carousel.replica-services-carousel{--carousel-columns:1}}
